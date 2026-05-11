@@ -41,9 +41,14 @@ pipeline {
 
         // Stage 4: Run Unit Tests
         stage('Test') {
-            steps {
-                bat 'echo No automated tests are configured for this project.'
+        steps {
+            bat 'npm test'
+        }
+        post {
+            always {
+            junit 'junit.xml'
             }
+        }
         }
 
         // Stage 5: Deploy
