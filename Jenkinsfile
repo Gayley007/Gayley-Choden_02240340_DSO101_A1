@@ -21,6 +21,7 @@ pipeline {
         // Stage 2: Install Dependencies
         stage('Install') {
             steps {
+                bat 'npm install'
                 dir('backend') {
                     bat 'npm install'
                 }
@@ -41,14 +42,14 @@ pipeline {
 
         // Stage 4: Run Unit Tests
         stage('Test') {
-        steps {
-            bat 'npm test'
-        }
-        post {
-            always {
-            junit 'junit.xml'
+            steps {
+                bat 'npm test'
             }
-        }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'junit.xml', allowEmptyArchive: true
+                }
+            }
         }
 
         // Stage 5: Deploy

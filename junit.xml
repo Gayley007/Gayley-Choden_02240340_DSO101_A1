@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="0.282">
-  <testsuite name="Basic App Tests" errors="0" failures="0" skipped="0" timestamp="2026-05-11T15:47:35" time="0.228" tests="2">
-    <testcase classname="Basic App Tests should pass a simple addition test" name="Basic App Tests should pass a simple addition test" time="0.001">
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="0.181">
+  <testsuite name="Basic App Tests" errors="0" failures="0" skipped="0" timestamp="2026-05-11T16:03:06" time="0.132" tests="2">
+    <testcase classname="Basic App Tests should pass a simple addition test" name="Basic App Tests should pass a simple addition test" time="0.003">
     </testcase>
     <testcase classname="Basic App Tests should return true" name="Basic App Tests should return true" time="0">
     </testcase>
