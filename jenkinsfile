@@ -41,11 +41,14 @@ pipeline {
 
         // Stage 4: Run Unit Tests
         stage('Test') {
-            steps {
-                dir('Backend') {
-                    bat 'npm test -- --passWithNoTests'
-                }
+        steps {
+            sh 'npm test'
+        }
+        post {
+            always {
+            junit 'junit.xml'
             }
+        }
         }
 
         // Stage 5: Deploy
