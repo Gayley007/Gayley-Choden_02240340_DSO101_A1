@@ -23,14 +23,14 @@ jobs:
       # 3. Build & Push Backend Docker Image
       - name: Build and Push Backend Image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:02240353 ./Backend
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:02240353
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:02240340 ./Backend
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/be-todo:02240340
 
       # 4. Build & Push Frontend Docker Image
       - name: Build and Push Frontend Image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:02240353 ./Frontend
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:02240353
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:02240340 ./Frontend
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/fe-todo:02240340
 
       # 5. Trigger Render redeployment via webhooks
       - name: Trigger Render Backend Deployment
