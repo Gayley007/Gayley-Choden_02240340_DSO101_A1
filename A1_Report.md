@@ -81,8 +81,8 @@ services:
         value: "https://be-todo.onrender.com"
 ```
 
-- ![alt text](1.png) — screenshot of backend service on Render
-- ![alt text](2.png) — screenshot of frontend service on Render
-- ![alt text](3.png) — screenshot of simple To-Do app UI
+![alt text](1.png) — screenshot of backend service on Render
+![alt text](2.png) — screenshot of frontend service on Render
+![alt text](3.png) — screenshot of simple To-Do app UI
 
 - After pushing to GitHub, Render automatically builds and deploys both services using the `render.yaml` configuration.
